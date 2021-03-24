@@ -7,5 +7,10 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   employeeArray: string[];
-  
+  newEmployee: string = "";
+  incrementor: number = 0;
+  onClick(): void {
+    this.employeeArray[this.incrementor] = this.newEmployee;
+    this.incrementor += 1;
+  }
 }
