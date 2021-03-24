@@ -4,14 +4,21 @@
       <h1 class="card-title">Parent Component</h1>
       <div class>
         <div class="form-group">
-          <input class="form-control" type="text" placeholder="Employee Name" />
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Employee Name"
+            [(ngModel)]="employeeArray.push()"
+          />
         </div>
         <div class="form-group">
           <button class="btn btn-primary">Add Employee</button>
         </div>
       </div>
       <div>
-        <app-employee-detail></app-employee-detail>
+        <app-employee-detail
+          [employeeArray]="employeeArray"
+        ></app-employee-detail>
       </div>
     </div>
   </div>
