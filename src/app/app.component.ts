@@ -6,7 +6,7 @@ import { Component, VERSION } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  employeeArray: string[];
+  employeeArray: string[] = [];
   newEmployee: string = "";
   incrementor: number = 0;
   onClick(): void {
